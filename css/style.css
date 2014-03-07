@@ -1,0 +1,232 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.alignright {
+    float: right;
+    padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+    float: left;
+    padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+.fifty {
+    width:40%;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    color: #000;
+    font-size: 62.5%;
+    line-height: 1.4;
+    font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
+}
+
+/* Center the container */
+.container {
+    width:100%;
+    margin: auto;
+}
+
+/******************************************
+/* GLOBAL HEADER STYLES
+/*******************************************/
+
+header {
+    border-bottom: 1px solid LightGrey;
+    width:100%;
+    height:88px;
+    display:block;
+    background-color: rgba(255,255,255,.95);
+    position:fixed;
+    top:0px;
+    box-shadow: 0px 2px 7px 0px rgba(0,0,0,.5);
+    clear:both;
+    z-index:100;
+}
+
+.header-content {
+    width:90%;
+    margin: 0 auto;
+}
+
+.header-logo {
+    position:relative;
+    top:0;
+    left:0;
+    padding:10px 0 10px;
+    width:171px;
+    height:auto;
+    display:inline;
+}
+
+header nav {
+    display:inline;
+    float:right;
+    padding-top:30px;
+}
+
+header nav a {
+    text-decoration:none;
+    color: rgba(25, 65, 112, 1);
+    padding:0 10px 0 10px;
+    font-size:1.25rem;
+}
+
+header nav a:hover {
+    border-bottom:3px solid rgba(25, 65, 112, 1);
+    padding-bottom:31px;
+}
+
+header nav a:active {
+    border-bottom:3px solid rgba(25, 65, 112, 1);
+    padding-bottom:31px;
+}
+
+/******************************************
+/* GLOBAL STYLES
+/*******************************************/
+.pagecontent {
+    position:relative;
+    top:88px;
+    left:0px;
+    display:block;
+}
+
+/******************************************
+/* GLOBAL FOOTER STYLES
+/*******************************************/
+
+footer {
+    width:100%;
+    height:100px;
+    background-color: rgba(25, 65, 112, 1);
+    color:white;
+    font-size:.8rem;
+    margin:0 auto;
+    clear:both;
+    position:relative;
+    top:75px;
+}
+
+footer p {
+    padding: 40px 0 0 5%;
+}
+
+/******************************************
+/* HOMEPAGE STYLES
+/*******************************************/
+
+.home-cover {
+    background-image: url('http://images.boomsbeat.com/data/images/full/4684/1-jpg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin:0 auto;
+}
+
+.home-cover h1, .home-cover p {
+    background-color: rgba(0,0,0,.5);
+    color:white;
+    text-align:center;
+    margin:0 auto;
+    border-radius:5px;
+    width:50%;
+}
+
+.home-cover h1 {
+    font-size:3rem;
+    padding:10px;
+}
+
+.home-cover p {
+    font-size:1rem;
+    padding:10px;
+    margin-top:10px;
+}
+
+.home-cover div {
+    padding:200px;
+}
+
+/*Case Studies Section*/
+.home-casestudies {
+    background-color: rgba(255,255,255,1);
+    margin:0 auto;
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+#case-container {
+    width:90%;
+    height:auto;
+    margin: 0 auto;
+    padding:40px 0 40px 0;
+}
+
+.case-study {
+    display:inline-block;
+    width:320px;
+    /* padding-left:1%; */
+}
+
+.threecol {
+    margin-left:7.5%;
+}
+
+.home-whatwedo {
+    background-color: rgba(8, 174, 222,1);
+    position:relative;
+    height:315px;
+    z-index:10;
+}
+
+#wwd-container {
+    width:90%;
+    height:auto;
+    margin: 0 auto;
+    padding-top:10px;
+}
+
+.topic {
+    display:inline-block;
+}
+
+.right {
+    float:right;
+    padding-right:20px;
+    margin-right:20px;
+}
+
+.left {
+    float:left;
+    padding-left:20px;
+    margin-left:20px;
+}
