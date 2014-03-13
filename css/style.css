@@ -292,7 +292,6 @@ footer .container {
     display:inline-block;
 }
 
-
 .staff-contact a {
     text-decoration:none;
     display:inline-block;
@@ -323,33 +322,17 @@ footer .container {
     clear:both;
 }
 
-.staff-contact li {
-    width:30%;
+.staff-contact div {
+    float:left;
+    width:31%;
     margin:0 auto;
-    display:inline-block;
-    padding:.5rem;
+    padding: 10px 0 10px;
+    border:none;
 }
 
-.staff-contact li a {
-    text-indent: -9999px;
-}
-
-#email {
-    background-image: url('#');
-    background-repeat:no-repeat;
-    background-size: cover;
-}
-
-#linkedin {
-    background-image: url('#');
-    background-repeat:no-repeat;
-    background-size: cover;
-}
-
-#twitter {
-    background-image: url('#');
-    background-repeat:no-repeat;
-    background-size: cover;
+#linkedin, #twitter, #email {
+    border:none;
+    width:80%;
 }
 
 
@@ -360,7 +343,7 @@ footer .container {
     }
 }
 
-/*Footer Breakpoint*/
+/*Mobile Breakpoint*/
 @media only screen and (max-width:650px){
     footer section {
         display:block;
@@ -396,13 +379,6 @@ footer .container {
         display:block;
     }
 
-    .desktop-only {
-        display:none;
-    }
-}
-
-/*iPhone5 Landscape Breakpoint*/
-@media only screen and (max-width:480px) {
     .container {
         width:95%;
         margin:0 auto;
@@ -416,5 +392,3 @@ footer .container {
         display:none;
     }
 }
-
-
