@@ -1,0 +1,158 @@
+.container {
+    width:90%;
+    margin: 0 auto;
+}
+
+.staff-name {
+    font-size:2rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight:700;
+    color:blue;
+    padding-bottom:5px;
+    width:36%;
+    margin: 10px 0 0;
+}
+
+.left-col {
+    width:36%;
+    margin:0;
+    float:left;
+}
+
+.left-col img {
+    border-top: 1px solid LightGray;
+    padding-top:10px;
+    margin:0 auto;
+}
+
+.staff-photo {
+    padding:0 10px 10px 0;
+    width:90%;
+}
+
+.staff-contact {
+    clear:both;
+    list-style:none;
+    display:inline-block;
+}
+
+
+.staff-contact a {
+    text-decoration:none;
+    display:inline-block;
+}
+
+.staff-bio {
+    float:right;
+    width:63%;
+    font-size:1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom:25px;
+}
+
+.staff-bio p {
+    margin: 0 0 1rem 0;
+}
+
+.staff-bio p:last-child {
+    margin: 0;
+}
+
+.mobile-only {
+    display:none;
+}
+
+.desktop-only-social {
+    display: inline-block;
+    clear:both;
+}
+
+.staff-contact li {
+    width:30%;
+    margin:0 auto;
+    display:inline-block;
+    padding:.5rem;
+}
+
+.staff-contact li a {
+    text-indent: -9999px;
+}
+
+#email {
+    background-image: url('#');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#linkedin {
+    background-image: url('#');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#twitter {
+    background-image: url('#');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+
+/*iPad Portrait Breakpoint*/
+@media only screen and (max-width:768px) {
+    .container {
+        width:90%;
+    }
+}
+
+/*Footer Breakpoint*/
+@media only screen and (max-width:650px){
+    footer section {
+        display:block;
+        float:none;
+        width:auto;
+        border:none;
+        margin:0;
+        padding:0;
+        border-top:1px solid grey;
+    }
+}
+
+/*iPhone5 Landscape Breakpoint*/
+@media only screen and (max-width:480px) {
+    .container {
+        width:95%;
+        margin:0 auto;
+    }
+
+    .staff-name {
+        text-align:center;
+        width:100%;
+    }
+    .staff-photo {
+        float:none;
+        display:block;
+        margin:0 auto;
+        width: 75%;
+        padding:0;
+        text-align:center;
+    }
+
+    .left-col {float:none;width:100%;margin-bottom:25px;}
+
+    .staff-bio {
+        float: none;
+        width:100%;
+        padding:0;
+        margin:0;
+        font-size:115%;
+        display:block;
+    }
+
+    .mobile-only {
+        display:block;
+    }
+
+    .desktop-only-social {
+        display:none;
+    }
+}
