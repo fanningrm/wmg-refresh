@@ -64,9 +64,7 @@ header {
     height:88px;
     display:block;
     background-color: rgba(255,255,255,1);
-    position:fixed;
-    top:0px;
-    box-shadow: 0px 2px 7px 0px rgba(0,0,0,.5);
+    box-shadow: 0px 2px 7px 0px #bdc3c7;
     clear:both;
     z-index:100;
 }
@@ -119,6 +117,15 @@ header nav a:active {
     display:block;
 }
 
+.center {
+    margin:0 auto;
+    width:auto;
+}
+
+.padding {
+    margin:1rem;
+}
+
 /******************************************
 /* GLOBAL FOOTER STYLES
 /*******************************************/
@@ -129,7 +136,10 @@ footer {
     color:black;
     font-size:.8rem;
     margin-top: 25px;
-    border-top:1px solid grey;
+    border-top:1px solid #bdc3c7;
+    -webkit-box-shadow: 0px -2px 7px 0px #bdc3c7;
+    -moz-box-shadow:    0px -2px 7px 0px #bdc3c7;
+    box-shadow:         0px -2px 7px 0px #bdc3c7;
 }
 
 footer section {
@@ -137,8 +147,9 @@ footer section {
     display:inline;
     float:left;
     margin-left:2%;
-    border-left: 1px solid grey;
+    border-left: 1px solid #bdc3c7;
     height:200px;
+    max-height:200px;
     padding-left:2%;
 }
 
@@ -150,6 +161,26 @@ footer section:first-child {
 
 footer .container {
     margin-top:15px;
+}
+
+.followus .container div {
+    float:none;
+    display:inline;
+    width: auto;
+    margin-left:12%;
+}
+
+
+.followus div a {
+    text-decoration:none;
+}
+
+.facebook-foot, .twitter-foot {
+    width: 30%;
+}
+
+.followus .container {
+    margin-top:1.8rem;
 }
 
 /******************************************
@@ -260,9 +291,9 @@ footer .container {
 
 .staff-name {
     font-size:2rem;
-    font-family: 'Quicksand', sans-serif;
-    font-weight:700;
-    color:blue;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight:400;
+    color:rgba(26, 64, 112, 1);
     padding-bottom:5px;
     width:36%;
     margin: 10px 0 0;
@@ -276,25 +307,45 @@ footer .container {
 }
 
 .left-col img {
-    border-top: 1px solid LightGray;
-    padding-top:10px;
     margin:0 auto;
 }
 
 .staff-photo {
-    padding:0 10px 10px 0;
+    padding:10px 10px 10px 0;
+    border-top: 1px solid #bdc3c7;
     width:90%;
+    max-width:400px;
 }
 
 .staff-contact {
     clear:both;
-    list-style:none;
+    margin:0 auto;
+}
+
+.staff-contact div {
+    float:left;
+    width:31%;
+    margin:0 auto;
+    padding: .5rem 0 .5rem;
+    border:none;
+}
+
+.staff-contact div a {
+    text-decoration:none;
     display:inline-block;
 }
 
-.staff-contact a {
-    text-decoration:none;
+.staff-contact div a img {
+    text-align:center;
     display:inline-block;
+}
+
+.linkedin, .twitter, .email {
+    width:75%;
+}
+
+div a img .linkedin, div a img .twitter, div a img .email {
+    border:none;
 }
 
 .staff-bio {
@@ -322,29 +373,16 @@ footer .container {
     clear:both;
 }
 
-.staff-contact div {
-    float:left;
-    width:31%;
-    margin:0 auto;
-    padding: 10px 0 10px;
-    border:none;
-}
-
-#linkedin, #twitter, #email {
-    border:none;
-    width:80%;
-}
-
+/******************************************
+/*  RESPONSIVE STYLES
+/*******************************************/
 
 /*iPad Portrait Breakpoint*/
 @media only screen and (max-width:768px) {
     .container {
         width:90%;
     }
-}
 
-/*Mobile Breakpoint*/
-@media only screen and (max-width:650px){
     footer section {
         display:block;
         float:none;
@@ -355,15 +393,70 @@ footer .container {
         border-top:1px solid grey;
     }
 
+
+    .facebook-foot, .twitter-foot {
+        width: 22%;
+    }
+
+    .followus .container div {
+        margin-left:20%;
+    }
+
+    .followus .container {
+        margin-top:1rem;
+    }
+
+    .mobile-only {
+        display:block;
+    }
+
+    .hamburger {
+        background-image: url('../img/icons/hamburger.png');
+        background-repeat:no-repeat;
+        float:right;
+    }
+
+}
+
+/*Mobile Breakpoint*/
+@media only screen and (max-width:650px){
+
     .staff-name {
         text-align:center;
         width:100%;
     }
+
+    .staff-contact {
+        width:auto;
+        margin:0 auto;
+        padding:.5rem 0 .75rem;
+    }
+
+    .staff-contact div {
+        margin-left: 3.5%;
+    }
+
+    .staff-contact div:first-child {
+        margin-left: 0;
+}
+
+    .staff-bio p {
+        margin: 0 0 1rem 0;
+    }
+
+    .staff-bio p:first-child {
+        margin-top: -2.5rem;
+    }
+
+    .staff-bio p:last-child {
+        margin-bottom: 0;
+    }
+
     .staff-photo {
         float:none;
         display:block;
         margin:0 auto;
-        width: 75%;
+        width: 65%;
         padding:0;
         text-align:center;
     }
@@ -375,6 +468,7 @@ footer .container {
         width:100%;
         padding:0;
         margin:0;
+        margin-top:-2rem;
         font-size:115%;
         display:block;
     }
