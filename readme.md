@@ -12,7 +12,7 @@ Active Pages:
 *Who We Are
 *Staff Bio Pages (Ryan Fanning as example)
 
-Pages Under Construction
+Pages Under Construction:
 *What We Do
 *Our News
 *Contact

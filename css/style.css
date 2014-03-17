@@ -53,6 +53,11 @@
     left: 50px;
 }
 
+.container-60 {
+    width:60%;
+    margin:0 auto;
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -151,9 +156,12 @@ header nav a:hover {
     padding-bottom:31px;
 }
 
-header nav a:active {
-    border-bottom:3px solid rgba(25, 65, 112, 1);
-    padding-bottom:31px;
+.hamburger {
+    display:none;
+    width:50px;
+    height:50px;
+    float:right;
+    margin-top:1rem;
 }
 
 /******************************************
@@ -176,8 +184,8 @@ footer section {
     float:left;
     margin-left:2%;
     border-left: 1px solid #bdc3c7;
-    height:200px;
-    max-height:200px;
+    height:250px;
+    max-height:250px;
     padding-left:2%;
 }
 
@@ -318,6 +326,36 @@ footer a {
 }
 
 /******************************************
+/*  Who We Are STYLES
+/*******************************************/
+.emp-name a{
+    font-size:150%;
+    color:rgba(26, 64, 112, 1);
+    margin:0;
+    padding:0;
+    line-height:1;
+}
+
+.emp-title {
+    border-bottom:1px solid #bdc3c7;
+    margin:0;
+    padding:0;
+    padding-bottom:10px;
+    line-height:1;
+    font-size:115%;
+}
+
+.emp-title:last-child {
+    border-bottom:none;
+}
+
+.container-60 section {
+    margin:25px 0 25px;
+}
+
+
+
+/******************************************
 /*  EMP BIO STYLES
 /*******************************************/
 .container {
@@ -415,16 +453,15 @@ div a img .linkedin, div a img .twitter, div a img .email {
 
 /*iPad Portrait Breakpoint*/
 @media only screen and (max-width:768px) {
+    .hamburger {
+        width: 50px;
+        height:auto;
+        float:right;
+        margin-top:1rem;
+    }
+
     .container {
         width:90%;
-    }
-
-    .desktop-only {
-        display:none;
-    }
-
-    .mobile-only {
-        display:block;
     }
 
     footer section {
@@ -435,6 +472,14 @@ div a img .linkedin, div a img .twitter, div a img .email {
         margin:0;
         padding:0;
         border-top:1px solid grey;
+    }
+
+    footer .followus {
+        max-height:180px;
+    }
+
+    footer .contact {
+        max-height:150px;
     }
 
     .facebook-foot, .twitter-foot {
@@ -449,21 +494,46 @@ div a img .linkedin, div a img .twitter, div a img .email {
         margin-top:1rem;
     }
 
-    .hamburger {
-        width: 50px;
-        height:auto;
-        float:right;
-        margin-top:1rem;
-    }
+
 
 }
 
 /*Mobile Breakpoint*/
 @media only screen and (max-width:650px){
+    .container {
+        width:95%;
+    }
+
+    .desktop-only {
+        display:none;
+    }
+
+    .mobile-only {
+        display:block;
+    }
+
+    .hamburger {
+        display:block;
+    }
 
     .staff-name {
         text-align:center;
         width:100%;
+    }
+
+    .left-col {
+        float:none;
+        width:100%;
+        margin-bottom:25px;
+    }
+
+    .staff-photo {
+        float:none;
+        display:block;
+        margin:0 auto;
+        width: 65%;
+        padding:0;
+        text-align:center;
     }
 
     .staff-contact {
@@ -478,7 +548,17 @@ div a img .linkedin, div a img .twitter, div a img .email {
 
     .staff-contact div:first-child {
         margin-left: 0;
-}
+    }
+
+    .staff-bio {
+        float: none;
+        width:100%;
+        padding:0;
+        margin:0;
+        margin-top:-2rem;
+        font-size:115%;
+        display:block;
+    }
 
     .staff-bio p {
         margin: 0 0 1rem 0;
@@ -491,39 +571,5 @@ div a img .linkedin, div a img .twitter, div a img .email {
 
     .staff-bio p:last-child {
         margin-bottom: 0;
-    }
-
-    .staff-photo {
-        float:none;
-        display:block;
-        margin:0 auto;
-        width: 65%;
-        padding:0;
-        text-align:center;
-    }
-
-    .left-col {float:none;width:100%;margin-bottom:25px;}
-
-    .staff-bio {
-        float: none;
-        width:100%;
-        padding:0;
-        margin:0;
-        margin-top:-2rem;
-        font-size:115%;
-        display:block;
-    }
-
-    .container {
-        width:95%;
-        margin:0 auto;
-    }
-
-    .mobile-only {
-        display:block;
-    }
-
-    .desktop-only {
-        display:none;
     }
 }
