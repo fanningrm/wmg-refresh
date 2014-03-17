@@ -37,15 +37,35 @@
     width:40%;
 }
 
+.template {
+    background-color: rgb(15, 196, 204);
+    height:500px;
+    position: relative;
+    z-index:-1;
+}
+
+.template .container {
+    margin:50px 0 50px;
+    background-color:white;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
-    color: #000;
+    color:rgba(26, 64, 112, 1);
     font-size: 62.5%;
     line-height: 1.4;
     font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
+}
+
+body p {
+    color: #7f8c8d;
 }
 
 /* Center the container */
@@ -54,8 +74,25 @@ body {
     margin: auto;
 }
 
+.page-content {
+    padding-bottom: 30px;
+}
+
 /******************************************
-/* GLOBAL HEADER STYLES
+/* GLOBAL STYLES
+/*******************************************/
+
+.center {
+    margin:0 auto;
+    width:auto;
+}
+
+.padding {
+    margin:1rem;
+}
+
+/******************************************
+/* HEADER STYLES
 /*******************************************/
 
 header {
@@ -64,9 +101,9 @@ header {
     height:88px;
     display:block;
     background-color: rgba(255,255,255,1);
-    box-shadow: 0px 2px 7px 0px #bdc3c7;
+    box-shadow: 0px 3px 7px 0px #bdc3c7;
     clear:both;
-    z-index:100;
+    z-index:1000;
 }
 
 .header-content {
@@ -88,9 +125,21 @@ header nav {
     display:inline;
     float:right;
     padding-top:30px;
+    z-index:1000;
 }
 
-header nav a {
+header ul {
+    margin:0;
+    padding:0;
+}
+
+header ul li {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+header nav ul li a {
     text-decoration:none;
     color: rgba(25, 65, 112, 1);
     padding:0 10px 0 10px;
@@ -108,38 +157,17 @@ header nav a:active {
 }
 
 /******************************************
-/* GLOBAL STYLES
-/*******************************************/
-.pagecontent {
-    position:relative;
-/*    top:88px;
-    left:0px;*/
-    display:block;
-}
-
-.center {
-    margin:0 auto;
-    width:auto;
-}
-
-.padding {
-    margin:1rem;
-}
-
-/******************************************
-/* GLOBAL FOOTER STYLES
+/* FOOTER STYLES
 /*******************************************/
 
 footer {
     width:100%;
-    background-color: rgba(255, 255, 255, 1);
-    color:black;
     font-size:.8rem;
-    margin-top: 25px;
     border-top:1px solid #bdc3c7;
     -webkit-box-shadow: 0px -2px 7px 0px #bdc3c7;
     -moz-box-shadow:    0px -2px 7px 0px #bdc3c7;
     box-shadow:         0px -2px 7px 0px #bdc3c7;
+    z-index:1000;
 }
 
 footer section {
@@ -161,6 +189,7 @@ footer section:first-child {
 
 footer .container {
     margin-top:15px;
+    margin-bottom:15px;
 }
 
 .followus .container div {
@@ -177,10 +206,17 @@ footer .container {
 
 .facebook-foot, .twitter-foot {
     width: 30%;
+    max-width:100px;
 }
 
 .followus .container {
     margin-top:1.8rem;
+}
+
+footer a {
+    color: #7f8c8d;
+    line-height:125%;
+
 }
 
 /******************************************
@@ -293,7 +329,6 @@ footer .container {
     font-size:2rem;
     font-family: 'Helvetica Neue', sans-serif;
     font-weight:400;
-    color:rgba(26, 64, 112, 1);
     padding-bottom:5px;
     width:36%;
     margin: 10px 0 0;
@@ -320,6 +355,7 @@ footer .container {
 .staff-contact {
     clear:both;
     margin:0 auto;
+    max-width:auto;
 }
 
 .staff-contact div {
@@ -383,6 +419,14 @@ div a img .linkedin, div a img .twitter, div a img .email {
         width:90%;
     }
 
+    .desktop-only {
+        display:none;
+    }
+
+    .mobile-only {
+        display:block;
+    }
+
     footer section {
         display:block;
         float:none;
@@ -392,7 +436,6 @@ div a img .linkedin, div a img .twitter, div a img .email {
         padding:0;
         border-top:1px solid grey;
     }
-
 
     .facebook-foot, .twitter-foot {
         width: 22%;
@@ -406,14 +449,11 @@ div a img .linkedin, div a img .twitter, div a img .email {
         margin-top:1rem;
     }
 
-    .mobile-only {
-        display:block;
-    }
-
     .hamburger {
-        background-image: url('../img/icons/hamburger.png');
-        background-repeat:no-repeat;
+        width: 50px;
+        height:auto;
         float:right;
+        margin-top:1rem;
     }
 
 }

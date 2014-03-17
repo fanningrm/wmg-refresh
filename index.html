@@ -12,85 +12,123 @@
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="header-content">
-        <img class="header-logo" src="img/main-logo.png" />
-        <nav>
-          <a href="#">Who We Are</a>
-          <a href="#">What We Do</a>
-          <a href="#">Our News</a>
-          <a href="#">Contact</a>
-        </nav>
-      </div>
-    </header>
-    <div class="pagecontent clearfix">
-      <section class="home-cover">
-        <div><h1>Tell Your Story.</h1>
-        <p>At Washington Media Group, we help you tell your story before someone else tells it for you.</p></div>
-      </section><!-- End Home Cover -->
-      <section class="home-casestudies">
-        <div id="case-container">
-          <div class="case-study">
-            <img src="http://lorempixel.com/people/320/100/" alt="">
-            <h1>Lorem Ipsum</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, eligendi, possimus quisquam quae accusamus officia dolor quibusdam in dicta magni repellat rem facilis quis. Voluptates.</p>
-          </div>
-          <div class="case-study threecol">
-            <img src="http://lorempixel.com/people/320/100/" alt="">
-            <h1>Lorem Ipsum</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, unde, in, animi earum aliquid voluptas ut sed rem iusto explicabo exercitationem consequuntur facere deserunt dicta?</p>
-          </div>
-          <div class="case-study threecol">
-            <img src="http://lorempixel.com/people/320/100/" alt="">
-            <h1>Lorem Ipsum</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, enim, nemo libero tempore ullam eos repellendus nobis fugiat eius dolore quibusdam magni aspernatur dolor consectetur?</p>
-          </div>
-        </div>
-      </section>
-      <section class="home-whatwedo">
-      <div id="wwd-container">
-        <div class="left fifty">
-          <div class="topic">
-            <h1>Lorem Ipsum</h1>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum ipsa excepturi nobis tempore ipsum vitae et accusamus iusto soluta! Laudantium expedita nisi dolorem earum?
-            </p>
-          </div>
-          <div class="topic">
-            <h1>Lorem Ipsum</h1>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum ipsa excepturi nobis tempore ipsum vitae et accusamus iusto soluta! Laudantium expedita nisi dolorem earum?
-            </p>
-          </div>
-          <div class="topic">
-            <h1>Lorem Ipsum</h1>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum ipsa excepturi nobis tempore ipsum vitae et accusamus iusto soluta! Laudantium expedita nisi dolorem earum?
-            </p>
-          </div>
-        </div>
-        <div class="right fifty">
-          <div class="topic">
-            <h1>Lorem Ipsum</h1>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum ipsa excepturi nobis tempore ipsum vitae et accusamus iusto soluta! Laudantium expedita nisi dolorem earum?
-            </p>
-          </div>
-          <div class="topic">
-            <h1>Lorem Ipsum</h1>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum ipsa excepturi nobis tempore ipsum vitae et accusamus iusto soluta! Laudantium expedita nisi dolorem earum?
-            </p>
-          </div>
-          <div class="topic">
-            <h1>Lorem Ipsum</h1>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum ipsa excepturi nobis tempore ipsum vitae et accusamus iusto soluta! Laudantium expedita nisi dolorem earum?
-            </p>
-          </div>
-          </div>
-        </div>
-      </section>
+
+  <header>
+    <div class="header-content">
+      <img class="header-logo" src="img/main-logo.png" />
+      <img src="img/icons/hamburger.png" class="mobile-only hamburger" alt="Mobile Menu" /><!-- Thank you, http://FlatIcon.com -->
+      <nav class="desktop-only" id="main-menu">
+        <ul>
+          <li><a href="who-we-are/index.html">Who We Are</a></li>
+          <li><a href="#">What We Do</a></li>
+          <li><a href="#">Our News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <footer class="clearfix clear">
-      <p>&copy;2014 Washington Media Group, Inc.</p>
-    </footer>
-  </div><!-- #container -->
+  </header>
+
+  <section class="home-cover">
+    <div><h1>Tell Your Story.</h1>
+    <p>At Washington Media Group, we help you tell your story before someone else tells it for you.</p></div>
+  </section><!-- End Home Cover -->
+
+  <section class="home-casestudies">
+    <div id="case-container">
+      <div class="case-study">
+        <img src="http://lorempixel.com/people/320/100/" alt="">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, eligendi, possimus quisquam quae accusamus officia dolor quibusdam in dicta magni repellat rem facilis quis. Voluptates.</p>
+      </div>
+      <div class="case-study threecol">
+        <img src="http://lorempixel.com/people/320/100/" alt="">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, unde, in, animi earum aliquid voluptas ut sed rem iusto explicabo exercitationem consequuntur facere deserunt dicta?</p>
+      </div>
+      <div class="case-study threecol">
+        <img src="http://lorempixel.com/people/320/100/" alt="">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, enim, nemo libero tempore ullam eos repellendus nobis fugiat eius dolore quibusdam magni aspernatur dolor consectetur?</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-whatwedo">
+  <div id="wwd-container">
+    <div class="left fifty">
+      <div class="topic">
+        <h1>Lorem Ipsum</h1>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum ipsa excepturi nobis tempore ipsum vitae et accusamus iusto soluta! Laudantium expedita nisi dolorem earum?
+        </p>
+      </div>
+      <div class="topic">
+        <h1>Lorem Ipsum</h1>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum ipsa excepturi nobis tempore ipsum vitae et accusamus iusto soluta! Laudantium expedita nisi dolorem earum?
+        </p>
+      </div>
+      <div class="topic">
+        <h1>Lorem Ipsum</h1>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum ipsa excepturi nobis tempore ipsum vitae et accusamus iusto soluta! Laudantium expedita nisi dolorem earum?
+        </p>
+      </div>
+    </div>
+
+    <div class="right fifty">
+      <div class="topic">
+        <h1>Lorem Ipsum</h1>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum ipsa excepturi nobis tempore ipsum vitae et accusamus iusto soluta! Laudantium expedita nisi dolorem earum?
+        </p>
+      </div>
+      <div class="topic">
+        <h1>Lorem Ipsum</h1>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum ipsa excepturi nobis tempore ipsum vitae et accusamus iusto soluta! Laudantium expedita nisi dolorem earum?
+        </p>
+      </div>
+      <div class="topic">
+        <h1>Lorem Ipsum</h1>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum ipsa excepturi nobis tempore ipsum vitae et accusamus iusto soluta! Laudantium expedita nisi dolorem earum?
+        </p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="clear clearfix">
+    <div class="container">
+
+      <section class="signup">
+        <h2>Get Updates</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, repellendus!</p>
+      </section>
+
+      <section class="followus">
+        <h2>Follow WMG</h2>
+        <div class="container">
+          <!-- Begin Twitter Button -->
+          <div>
+            <a href="https://twitter.com/intent/user?screen_name=WMG_DC">
+              <img src="img/icons/twitter.png"  class="twitter-foot" alt="WMG Twitter">
+            </a>
+          </div>
+          <!-- End Twitter Button -->
+          <!-- Begin Facebook Like Button -->
+          <div>
+            <a href="http://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fwashingtonmedia&width&height=35&colorscheme=dark&layout=button&show_faces=false&appId=345620828897186">
+              <img src="img/icons/facebook.png" class="facebook-foot" alt="WMG Facebook">
+            </a>
+          </div>
+         <!-- End FB Like Button -->
+       </div>
+      </section>
+
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <p><a href="http://maps.google.com/?q=1101%20New%20York%20Ave%20NW,%20Washington,%20District%20of%20Columbia,%2020005" target="_blank">1101 New York Avenue NW, Suite 800<br/>Washington, D.C. 20005</a><br/>(202) 628-1280<br/><a href="mailto:info@washingtonmedia.com">info@washingtonmedia.com</a></p>
+      </section>
+
+    </div>
+  </footer>
+
 <!-- Javascript files-->
 <script src="js/main.js"></script>
 </body>
