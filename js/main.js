@@ -1,18 +1,17 @@
-
-
 $('.hamburger').on('click', function() {
+    $('header nav').removeClass('desktop-only');
     $('#main-menu ul').slideToggle();
 });
 
+var w = $(window).width();
 $(window).resize(function(){
-    var w = $(window).width();
     if(w > 767) {
         $('.hamburger').hide();
         $('#main-menu ul').show();
     }
 
-    else {
-        $('#main-menu ul').hide();
+    else if (w<767) {
+        $('#main-menu ul li').hide();
         $('.hamburger').show();
     }
 });

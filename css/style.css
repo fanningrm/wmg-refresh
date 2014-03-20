@@ -66,7 +66,8 @@ body {
     color:rgba(26, 64, 112, 1);
     font-size: 62.5%;
     line-height: 1.4;
-    font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
+    font-family: 'cabrito', 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
+    position:relative;
 }
 
 body p {
@@ -81,6 +82,18 @@ body p {
 
 .page-content {
     padding-bottom: 30px;
+}
+
+a {
+    color: #c62128;
+}
+
+input[type=submit],
+.button,
+#mc-embedded-subscribe {
+    background:#29aee4;
+    color:#FFF;
+    font-family:inherit;
 }
 
 /******************************************
@@ -152,8 +165,11 @@ header nav ul li a {
 }
 
 header nav a:hover {
-    border-bottom:3px solid rgba(25, 65, 112, 1);
-    padding-bottom:31px;
+    color:#c62128;
+}
+
+header nav a:active {
+    color:#c62128;
 }
 
 .hamburger {
@@ -222,9 +238,29 @@ footer .container {
 }
 
 footer a {
-    color: #7f8c8d;
     line-height:125%;
+    text-decoration:none;
+}
 
+footer a:hover {
+    text-decoration:underline;
+}
+
+#mc_embed_signup {
+    padding-left:0;
+    background:#fff;
+    clear:left
+}
+
+footer #mc_embed_signup .button {
+    background:#29aee4;
+    color:#FFF;
+    font-family:inherit;
+    border-radius:0;
+}
+
+footer #mc_embed_signup .button:hover {
+    background-color:rgba(26, 64, 112, 1);
 }
 
 /******************************************
@@ -232,32 +268,32 @@ footer a {
 /*******************************************/
 
 .home-cover {
-    background-image: url('http://images.boomsbeat.com/data/images/full/4684/1-jpg.jpg');
+    background-image: url('../img/home-cover.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
+    position:relative;
+    top:-88px;
     margin:0 auto;
+    z-index:-1;
 }
 
 .home-cover h1, .home-cover p {
-    background-color: rgba(0,0,0,.5);
-    color:white;
+    background-color: rgba(255,255,255,.65);
     text-align:center;
+    color:rgba(26, 64, 112, 1);
     margin:0 auto;
-    border-radius:5px;
-    width:50%;
+    width:60%;
+    padding:1rem;
 }
 
 .home-cover h1 {
     font-size:3rem;
-    padding:10px;
 }
 
 .home-cover p {
     font-size:1rem;
-    padding:10px;
-    margin-top:10px;
 }
 
 .home-cover div {
@@ -453,6 +489,14 @@ div a img .linkedin, div a img .twitter, div a img .email {
 
 /*iPad Portrait Breakpoint*/
 @media only screen and (max-width:768px) {
+    .desktop-only {
+        display:none;
+    }
+
+    .container {
+        width:90%;
+    }
+
     .hamburger {
         width: 50px;
         height:auto;
@@ -460,8 +504,18 @@ div a img .linkedin, div a img .twitter, div a img .email {
         margin-top:1rem;
     }
 
-    .container {
-        width:90%;
+    nav ul li {
+        display:block;
+        border-bottom:1px solid rgba(26, 64, 112, 1);
+        background-color:#fff;
+        text-align:left;
+    }
+
+    nav ul li a {
+        display:block;
+        border-bottom:1px solid rgba(26, 64, 112, 1);
+        background-color:#fff;
+        text-align:left;
     }
 
     footer section {
@@ -502,10 +556,6 @@ div a img .linkedin, div a img .twitter, div a img .email {
 @media only screen and (max-width:650px){
     .container {
         width:95%;
-    }
-
-    .desktop-only {
-        display:none;
     }
 
     .mobile-only {
