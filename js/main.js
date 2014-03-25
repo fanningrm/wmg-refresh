@@ -1,5 +1,4 @@
 $('.hamburger').on('click', function() {
-    $('header nav').removeClass('desktop-only');
     $('#main-menu ul').slideToggle();
 });
 
