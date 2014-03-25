@@ -2,6 +2,8 @@
 /* SETUP
 /*******************************************/
 
+@import url("../fonts/stylesheet.css");
+
 /* Box Model Hack */
 * {
     -moz-box-sizing: border-box; /* Firexfox */ /* Safari/Chrome/iOS/Android */
@@ -63,10 +65,14 @@
 
 body {
     color:rgba(26, 64, 112, 1);
-    font-size: 62.5%;
+    font-size: 10px;
     line-height: 1.4;
     font-family: 'cabrito', 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
     position:relative;
+}
+
+h1,h2,h3 {
+    font-family: 'cabrito_bold', 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
 }
 
 body p {
@@ -128,7 +134,7 @@ header {
     margin: 0 auto;
 }
 
-.header-logo {
+.logo {
     position:relative;
     top:0;
     left:0;
