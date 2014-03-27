@@ -7,6 +7,5 @@ $('.menu-icon').on('click', function(e) {
     mainMenu.toggleClass('show');
 });
 
-
 // End Mobile Menu Functionality
 
