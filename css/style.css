@@ -440,31 +440,11 @@ footer #mc_embed_signup .button:hover {
 
 .staff-contact a {
     float:left;
-    width:31%;
-    margin: .5rem 1% .5rem 1%;
+    width:29%;
+    margin: .5rem 0 .5rem;
     border:none;
     text-align:center;
 }
-
-.staff-contact a:first-child {
-    margin-left: 0;
-    margin-right:0;
-}
-
-.staff-contact a:last-child {
-    margin-left: 0;
-    margin-right:0;
-}
-
-/*.staff-contact div a {
-    text-decoration:none;
-    display:inline-block;
-}
-
-.staff-contact div a img {
-    text-align:center;
-    display:inline-block;
-}*/
 
 .linkedin, .twitter, .email {
     width:75%;
