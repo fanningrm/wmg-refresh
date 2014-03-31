@@ -86,12 +86,16 @@ body p {
     margin: auto;
 }
 
-.page-content {
-    padding-bottom: 30px;
-}
-
 a {
     color: #c62128;
+}
+
+.page-title {
+    margin:0;
+    padding:0;
+    margin: 2rem 0 1rem 0;
+    font-size:1.8rem;
+    display:block;
 }
 
 input[type=submit],
@@ -302,64 +306,6 @@ footer #mc_embed_signup .button:hover {
     padding:200px;
 }
 
-/*Case Studies Section*/
-.home-casestudies {
-    background-color: rgba(255,255,255,1);
-    margin:0 auto;
-    box-shadow: inset 0 0 10px #000000;
-}
-
-#case-container {
-    width:90%;
-    height:auto;
-    margin: 0 auto;
-    padding:40px 0 40px 0;
-}
-
-.case-study {
-    display:inline-block;
-    width:320px;
-    /* padding-left:1%; */
-}
-
-.threecol {
-    margin-left:7.5%;
-}
-
-.home-whatwedo {
-    background-color: rgba(8, 174, 222,1);
-    position:relative;
-    height:315px;
-    z-index:10;
-}
-
-#wwd-container {
-    width:90%;
-    height:auto;
-    margin: 0 auto;
-    padding-top:10px;
-}
-
-.topic {
-    display:inline-block;
-}
-
-.right {
-    float:right;
-    padding-right:20px;
-    margin-right:20px;
-}
-
-.left {
-    float:left;
-    padding-left:20px;
-    margin-left:20px;
-}
-
-.clearmenu {
-    position:fixed;
-    top:88px;
-}
 
 /******************************************
 /*  Who We Are (Styles)
@@ -482,6 +428,38 @@ div a img .email {
 }
 
 /******************************************
+/*  CONTACT PAGE STYLES
+/*******************************************/
+
+#map iframe {
+    width:45%;
+    max-width:500px;
+    height:400px;
+    margin-bottom: 2.5rem;
+}
+
+#map {
+    display:inline;
+}
+
+.contact-info {
+    margin:0;
+    padding:0;
+    width:45%;
+    display:inline;
+}
+
+.contact-info p {
+    font-size:1rem;
+}
+
+.contact-info h3 {
+    font-size:1.2rem;
+    margin:0;
+    padding:0;
+}
+
+/******************************************
 /*  RESPONSIVE STYLES
 /*******************************************/
 
@@ -524,7 +502,6 @@ div a img .email {
     nav ul li:first-child {
         border-top:1px solid rgba(26, 64, 112, 1);
     }
-
 /*END MOBILE HEADER*/
 
 /*MOBILE FOOTER*/
@@ -563,6 +540,12 @@ div a img .email {
 
 /*Mobile Breakpoint*/
 @media only screen and (max-width:650px){
+
+    #map iframe {
+        width:100%;
+        height:300px;
+        float:none;
+    }
 
     .mobile-only {
         display:block;
