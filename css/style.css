@@ -431,28 +431,25 @@ div a img .email {
 /*  CONTACT PAGE STYLES
 /*******************************************/
 
-#map iframe {
+#map {
     margin:0;
     padding:0;
     margin-bottom: 2.5rem;
     width:47%;
     max-width:500px;
     height:400px;
-}
-
-#map {
-    display:inline;
+    overflow:hidden;
+    float:left;
 }
 
 .contact-info {
     margin:0;
     padding:0;
     width:47%;
-    display:inline-block;
     margin-left:5%;
     margin-bottom:2.5rem;
-    position:relative;
-    top:-155px;
+    z-index:1000;
+    float:left;
 }
 
 .contact-info p {
@@ -557,6 +554,8 @@ div a img .email {
         display:none;
     }
 
+
+/*Staff Bios*/
     .staff-name {
         text-align:center;
         width:100%;
@@ -617,18 +616,21 @@ div a img .email {
         margin-left: 0;
         margin-right:0;
     }
+/*End Staff Bios*/
 
-/*Contact Page*/
-    #map iframe {
+}
+
+@media only screen and (max-width:600px){
+    /*Contact Page*/
+    #map {
         width:100%;
         height:200px;
     }
 
     .contact-info {
-        top:0;
         width:auto;
         margin:0;
         margin-bottom:2.5rem;
     }
-
+/*End Contact Page*/
 }
