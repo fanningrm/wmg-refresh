@@ -34,10 +34,6 @@
     padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
-.fifty {
-    width:40%;
-}
-
 .template {
     background-color: rgb(15, 196, 204);
     height:500px;
@@ -304,6 +300,20 @@ footer #mc_embed_signup .button:hover {
 
 .home-cover div {
     padding:200px;
+}
+
+.case-studies {
+    padding:2rem 0 2rem;
+}
+
+.thirds {
+    width:32%;
+    padding-left:1%;
+    display:inline-block;
+}
+
+.thirds:first-child {
+    padding:0;
 }
 
 
