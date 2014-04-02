@@ -26,3 +26,11 @@ $(function() {
   });
 });
 //End Smooth ScrollTo
+
+$element = $('.home-cover');
+function fixMobileSafariViewport() {
+  $element.css('height', window.innerHeight * 0.9);
+}
+// listen to portrait/landscape changes
+window.addEventListener('orientationchange', fixMobileSafariViewport, true);
+fixMobileSafariViewport();

@@ -296,6 +296,8 @@ p.thanks {
     background-position: center;
     background-size: cover;
     height: 100vh;
+    width:auto;
+    display:block;
     margin:0 auto;
     z-index:-1;
 }
@@ -641,10 +643,23 @@ div a img .email {
         margin:0;
         float:none;
         display:block;
+        padding-bottom:1rem;
+        margin-bottom:1rem;
+        border-bottom:1px solid #bdc3c7;
     }
 
     .thirds img {
         width:100%;
+    }
+
+
+    .thirds p {
+        padding:0;
+        margin:0;
+    }
+
+    .thirds:last-child {
+        border-bottom:none;
     }
 
 
@@ -671,21 +686,6 @@ div a img .email {
 
     .practice-areas #first-half p:last-child {
         border-bottom:1px solid #bdc3c7;
-    }
-
-    .thirds p {
-        padding:0;
-        margin:0;
-    }
-
-    .thirds {
-        padding-bottom:1rem;
-        border-bottom:1px solid #bdc3c7;
-        margin-bottom:1rem;
-    }
-
-    .thirds:last-child {
-        border-bottom:none;
     }
 
 /*End Homepage Styles*/
