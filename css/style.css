@@ -623,7 +623,8 @@ div a img .email {
 /*Homepage Styles*/
 
     .home-cover div {
-        padding:150px 0 150px;
+        padding:80px 0 80px;
+        width:70%;
     }
 
     .home-cover h1 {
