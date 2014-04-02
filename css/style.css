@@ -317,14 +317,15 @@ p.thanks {
     padding:200px;
 }
 
-.case-studies {
+.case-studies .container {
     padding:2rem 0 2rem;
+    overflow:hidden;
 }
 
 .thirds {
     width:32%;
     margin-left:1.8%;
-    display:inline-block;
+    float:left;
 }
 
 .thirds img {
@@ -337,7 +338,7 @@ p.thanks {
 
 .half {
     width:48%;
-    display:inline-block;
+    float:left;
     padding-left:2%;
 }
 
@@ -359,6 +360,11 @@ p.thanks {
 .case-studies p {
     font-size:1.1rem;
     margin:.5rem 0 0;
+}
+
+.practice-areas .container {
+    padding: 2rem 0 2rem;
+    overflow:hidden;
 }
 
 
@@ -572,7 +578,7 @@ div a img .email {
         border:none;
         margin:0;
         padding:0;
-        border-top:1px solid grey;
+        border-top:1px solid #bdc3c7;
     }
 
     footer .followus {
@@ -608,7 +614,61 @@ div a img .email {
     .tablet-desk-only {
         display:none;
     }
+/*Homepage Styles*/
+    .case-studies .container {
+        padding:1rem 0 1rem;
+        overflow:hidden;
+    }
 
+    .thirds {
+        width:100%;
+        margin:0;
+        float:none;
+        display:block;
+    }
+
+    .thirds img {
+        width:100%;
+    }
+
+
+    .half {
+        width:100%;
+        float:none;
+        padding:0;
+    }
+
+    .practice-areas .container {
+        padding: 2rem 0 2rem;
+        overflow:hidden;
+    }
+
+    .practice-areas p {
+        padding-bottom:.5rem;
+        border-bottom:1px solid #bdc3c7;
+        margin-bottom:.5rem;
+    }
+
+    .practice-areas p:last-child {
+        border-bottom:none;
+    }
+
+    .thirds p {
+        padding:0;
+        margin:0;
+    }
+
+    .thirds {
+        padding-bottom:1rem;
+        border-bottom:1px solid #bdc3c7;
+        margin-bottom:1rem;
+    }
+
+    .thirds:last-child {
+        border-bottom:none;
+    }
+
+/*End Homepage Styles*/
 
 /*Staff Bios*/
     .staff-name {
