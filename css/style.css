@@ -267,6 +267,21 @@ footer #mc_embed_signup .button:hover {
     background-color:rgba(26, 64, 112, 1);
 }
 
+.thanks {
+    display:block;
+    text-align:center;
+}
+
+h1.thanks {
+    font-size:2rem;
+    margin-top:200px;
+}
+
+p.thanks {
+    font-size:1.2rem;
+    margin-bottom:200px;
+}
+
 /******************************************
 /* HOMEPAGE STYLES
 /*******************************************/
