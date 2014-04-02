@@ -308,12 +308,15 @@ footer #mc_embed_signup .button:hover {
 
 .thirds {
     width:32%;
-    padding-left:1%;
+    margin-left:1.8%;
     display:inline-block;
 }
 
+.thirds img {
+    width:98%;
+}
+
 .thirds:first-child {
-    padding:0;
     margin:0;
 }
 
@@ -325,6 +328,22 @@ footer #mc_embed_signup .button:hover {
 
 .half:first-child {
     padding:0;
+}
+
+.practice-areas {
+    background-color:#ecf0f1;
+}
+
+.practice-areas h3,
+.case-studies h3 {
+    font-size:1.5rem;
+    margin:1rem 0 0;
+}
+
+.practice-areas p,
+.case-studies p {
+    font-size:1.1rem;
+    margin:.5rem 0 0;
 }
 
 
