@@ -337,13 +337,13 @@ p.thanks {
 }
 
 .half {
-    width:48%;
+    width: 45%;
     float:left;
-    padding-left:2%;
+    margin-left: 10%;
 }
 
 .half:first-child {
-    padding:0;
+    margin: 0;
 }
 
 .practice-areas {
@@ -635,7 +635,7 @@ div a img .email {
     .half {
         width:100%;
         float:none;
-        padding:0;
+        margin:0;
     }
 
     .practice-areas .container {
@@ -651,6 +651,10 @@ div a img .email {
 
     .practice-areas p:last-child {
         border-bottom:none;
+    }
+
+    .practice-areas #first-half p:last-child {
+        border-bottom:1px solid #bdc3c7;
     }
 
     .thirds p {
@@ -749,8 +753,3 @@ div a img .email {
     }
 /*End Contact Page*/
 }
-
-@media only screen and (min-width:1300px){
-    html {
-        width:1300px;
-    }
