@@ -94,6 +94,10 @@ a {
     display:block;
 }
 
+.page-content {
+    z-index:-1;
+}
+
 input[type=submit],
 .button,
 #mc-embedded-subscribe {
@@ -314,7 +318,7 @@ p.thanks {
 }
 
 .home-cover div {
-    padding:200px;
+    padding:200px 0 200px;
 }
 
 .case-studies .container {
@@ -615,6 +619,18 @@ div a img .email {
         display:none;
     }
 /*Homepage Styles*/
+
+    .home-cover div {
+        padding:150px 0 150px;
+    }
+
+    .home-cover h1 {
+        font-size:2rem;
+    }
+    .home-cover p {
+        font-size:.8rem;
+    }
+
     .case-studies .container {
         padding:1rem 0 1rem;
         overflow:hidden;
