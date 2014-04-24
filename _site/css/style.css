@@ -575,7 +575,11 @@ div a img .email {
 
 #blog-post p {
     font-size:1rem;
-    margin-bottom:1rem;
+    margin-bottom:.75rem;
+}
+
+#blog-post p:last-child{
+    margin-bottom:2rem;
 }
 
 #blog-post img {
@@ -674,6 +678,10 @@ div a img .email {
 
     .tablet-desk-only {
         display:none;
+    }
+
+    .container-60 {
+        width:90%;
     }
 /*Homepage Styles*/
 
