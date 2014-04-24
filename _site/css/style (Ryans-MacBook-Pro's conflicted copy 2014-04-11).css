@@ -94,6 +94,12 @@ a {
     display:block;
 }
 
+.page-content {
+    z-index:-1;
+    margin:1rem 0 1rem;
+    padding:2rem 0 2rem;
+}
+
 input[type=submit],
 .button,
 #mc-embedded-subscribe {
@@ -267,6 +273,21 @@ footer #mc_embed_signup .button:hover {
     background-color:rgba(26, 64, 112, 1);
 }
 
+.thanks {
+    display:block;
+    text-align:center;
+}
+
+h1.thanks {
+    font-size:2rem;
+    margin-top:200px;
+}
+
+p.thanks {
+    font-size:1.2rem;
+    margin-bottom:200px;
+}
+
 /******************************************
 /* HOMEPAGE STYLES
 /*******************************************/
@@ -277,6 +298,8 @@ footer #mc_embed_signup .button:hover {
     background-position: center;
     background-size: cover;
     height: 100vh;
+    width:auto;
+    display:block;
     margin:0 auto;
     z-index:-1;
 }
@@ -299,21 +322,57 @@ footer #mc_embed_signup .button:hover {
 }
 
 .home-cover div {
-    padding:200px;
+    padding:200px 0 200px;
 }
 
-.case-studies {
+.case-studies .container {
     padding:2rem 0 2rem;
+    overflow:hidden;
 }
 
 .thirds {
     width:32%;
-    padding-left:1%;
-    display:inline-block;
+    margin-left:1.8%;
+    float:left;
+}
+
+.thirds img {
+    width:98%;
 }
 
 .thirds:first-child {
-    padding:0;
+    margin:0;
+}
+
+.half {
+    width: 45%;
+    float:left;
+    margin-left: 10%;
+}
+
+.half:first-child {
+    margin: 0;
+}
+
+.practice-areas {
+    background-color:#ecf0f1;
+}
+
+.practice-areas h3,
+.case-studies h3 {
+    font-size:1.5rem;
+    margin:1rem 0 0;
+}
+
+.practice-areas p,
+.case-studies p {
+    font-size:1.1rem;
+    margin:.5rem 0 0;
+}
+
+.practice-areas .container {
+    padding: 2rem 0 2rem;
+    overflow:hidden;
 }
 
 
@@ -475,6 +534,36 @@ div a img .email {
 }
 
 /******************************************
+/*  WHAT WE DO STYLES
+/*******************************************/
+
+.practice-area {
+    display:block;
+    width:auto;
+    margin: 0 0 1rem;
+    padding:0 0 1rem;
+    border-bottom:1px solid #bdc3c7;
+}
+
+.practice-area img {
+    border-radius: 100px;
+    float:left;
+}
+
+.practice-name {
+    float:left;
+
+}
+
+.practice-desc {
+    float:left;
+}
+
+
+
+
+
+/******************************************
 /*  RESPONSIVE STYLES
 /*******************************************/
 
@@ -527,7 +616,7 @@ div a img .email {
         border:none;
         margin:0;
         padding:0;
-        border-top:1px solid grey;
+        border-top:1px solid #bdc3c7;
     }
 
     footer .followus {
@@ -563,7 +652,75 @@ div a img .email {
     .tablet-desk-only {
         display:none;
     }
+/*Homepage Styles*/
 
+    .home-cover div {
+        padding:80px 0 80px;
+    }
+
+    .home-cover h1 {
+        font-size:2rem;
+    }
+    .home-cover p {
+        font-size:.8rem;
+    }
+
+    .case-studies .container {
+        padding:1rem 0 1rem;
+        overflow:hidden;
+    }
+
+    .thirds {
+        width:100%;
+        margin:0;
+        float:none;
+        display:block;
+        padding-bottom:1rem;
+        margin-bottom:1rem;
+        border-bottom:1px solid #bdc3c7;
+    }
+
+    .thirds img {
+        width:100%;
+    }
+
+
+    .thirds p {
+        padding:0;
+        margin:0;
+    }
+
+    .thirds:last-child {
+        border-bottom:none;
+    }
+
+
+    .half {
+        width:100%;
+        float:none;
+        margin:0;
+    }
+
+    .practice-areas .container {
+        padding: 2rem 0 2rem;
+        overflow:hidden;
+    }
+
+    .practice-areas p {
+        padding-bottom:.5rem;
+        border-bottom:1px solid #bdc3c7;
+        margin-bottom:.5rem;
+    }
+
+    .practice-areas p:last-child {
+        border-bottom:none;
+    }
+
+    .practice-areas #first-half p:last-child {
+        border-bottom:1px solid #bdc3c7;
+    }
+
+/*End Homepage Styles*/
 
 /*Staff Bios*/
     .staff-name {
@@ -649,5 +806,6 @@ div a img .email {
     html {
         width:1300px;
         margin:0 auto;
+        border: 1px solid #bdc3c7;
     }
 }
