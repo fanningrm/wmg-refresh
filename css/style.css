@@ -570,7 +570,7 @@ div a img .email {
 
 #blog-post h1 {
     font-size:2rem;
-    margin:1rem 0 1rem;
+    margin:2rem 0 1rem;
 }
 
 #blog-post p {
@@ -582,11 +582,14 @@ div a img .email {
     margin-bottom:2rem;
 }
 
-#blog-post img {
+#blog-post p img {
     margin: 0 auto;
-    padding:1rem 0 1rem;
+    padding-bottom:1rem;
 }
 
+#blog-post p:nth-of-type(1) {
+    text-align:center;
+}
 
 
 

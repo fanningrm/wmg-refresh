@@ -6,8 +6,25 @@
   <meta charset="utf-8">
   <meta name="description" content="Washington Media Group is a public relations and public affairs firm headquartered in Washington, DC.">
   <meta name="keywords" content="WMG, Washington Media Group, communications, pr, public relations, media, public affairs, digital strategy">
-  <title>WMG | Washington Media Group</title>
+  <title>{{page.title}} | WMG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Twitter and Facebook OG/Cards Tags -->
+  <meta property="og:title" content="{{page.title}}" />
+  <meta property="og:type" content="{{page.og-type}}" />
+  <meta property="og:url" content="{{page.og-url}}" />
+  <meta property="og:site_name" content="{{page.og-sitename}}" />
+  <meta property="og:image" content="{{page.og-image}}" />
+  <meta property="og:description" content="{{page.desc}}" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@WMG_DC">
+  <meta name="twitter:title" content="{{page.title}}">
+  <meta name="twitter:description" content="{{page.desc}}">
+  <meta name="twitter:creator" content="{{page.twitter-creator}}">
+  <meta name="twitter:image:src" content="{{page.og-image}}">
+  <meta name="twitter:domain" content="{{page.og-url}}">
+
   <!-- external CSS link -->
   <link rel="stylesheet" href="/css/normalize.css">
   <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css"><!--   Mailchimp Stylesheet-->

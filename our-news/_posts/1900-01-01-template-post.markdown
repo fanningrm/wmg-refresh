@@ -1,20 +1,21 @@
 ---
-title: Test Post
-desc: This is a sample of what the description would look like.
-og-title: "WMG Blog: Test Post"
+title: Template Post
+desc: This is a sample of what the description would look like. Put your own here.
+og-title: "WMG Blog: Template Post"
 og-url: "http://washingtonmedia.com"
 og-sitename: WMG Blog
-og-image: "http://www.washingtonmedia.com/img/facebook.jpg"
+og-type: blog
+og-image: "http://placehold.it/400x260"
 twitter-card: "summary_large_image"
-twitter-site: "@WMG_DC"
 twitter-creator: "@TheRyfan"
-layout: blog-post
 author-first: Ryan
 author-last: Fanning
-og-author: "@TheRyfan"
+layout: blog-post
 ---
 
 # {{page.title}}
+
+![This is placeholder alt text.]({{page.og-image}})
 
 By: [{{page.author-first}} {{page.author-last}}](/who-we-are/{{page.author-first}}{{page.author-last}}.html)
 
