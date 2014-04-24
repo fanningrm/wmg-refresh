@@ -1,16 +1,16 @@
 ---
+layout: blog-post
+og-sitename: WMG Blog
+og-type: blog
+twitter-card: "summary_large_image"
 title: Template Post
 desc: This is a sample of what the description would look like. Put your own here.
 og-title: "WMG Blog: Template Post"
-og-url: "http://washingtonmedia.com"
-og-sitename: WMG Blog
-og-type: blog
+og-url: "http://washingtonmedia.com/our-news/1900/01/01/template-post"
 og-image: "http://placehold.it/400x260"
-twitter-card: "summary_large_image"
 twitter-creator: "@TheRyfan"
 author-first: Ryan
 author-last: Fanning
-layout: blog-post
 ---
 
 # {{page.title}}

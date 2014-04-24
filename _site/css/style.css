@@ -583,12 +583,15 @@ div a img .email {
 }
 
 #blog-post p img {
-    margin: 0 auto;
-    padding-bottom:1rem;
+    width:100%;
+    padding:.5rem;
 }
 
 #blog-post p:nth-of-type(1) {
-    text-align:center;
+    margin:0;
+    padding:0;
+    display:inline;
+    float:right;
 }
 
 
@@ -819,6 +822,21 @@ div a img .email {
     }
 /*End Staff Bios*/
 
+/*Blog Styles*/
+
+#blog-post p img {
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+#blog-post p:nth-of-type(1) {
+    margin:0;
+    padding:0;
+    float:none;
+    display:block;
+}
+/*End Blog Styles*/
 }
 
 @media only screen and (max-width:600px){
