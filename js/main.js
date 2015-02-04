@@ -27,8 +27,6 @@ $(function() {
 });
 //End Smooth ScrollTo
 
-//Mobile Safari Hack
-
 $element = $('.home-cover');
 function fixMobileSafariViewport() {
   $element.css('height', window.innerHeight * 0.9);
@@ -36,5 +34,3 @@ function fixMobileSafariViewport() {
 // listen to portrait/landscape changes
 window.addEventListener('orientationchange', fixMobileSafariViewport, true);
 fixMobileSafariViewport();
-
-//End Mobile Safari Hack
