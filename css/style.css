@@ -96,6 +96,8 @@ a {
 
 .page-content {
     z-index:-1;
+    margin:1rem 0 1rem;
+    padding:2rem 0 2rem;
 }
 
 input[type=submit],
@@ -532,6 +534,69 @@ div a img .email {
 }
 
 /******************************************
+/*  WHAT WE DO STYLES
+/*******************************************/
+
+.practice-area {
+    display:block;
+    width:auto;
+    margin: 0 0 1rem;
+    padding:0 0 1rem;
+    border-bottom:1px solid #bdc3c7;
+}
+
+.practice-area img {
+    border-radius: 100px;
+    float:left;
+}
+
+.practice-name {
+    float:left;
+
+}
+
+.practice-desc {
+    float:left;
+}
+
+/******************************************
+/* BLOG STYLES
+/*******************************************/
+#blog-post h1,
+#blog-post p {
+    margin:0;
+    padding:0;
+}
+
+#blog-post h1 {
+    font-size:2rem;
+    margin:2rem 0 1rem;
+}
+
+#blog-post p {
+    font-size:1rem;
+    margin-bottom:.75rem;
+}
+
+#blog-post p:last-child{
+    margin-bottom:2rem;
+}
+
+#blog-post p img {
+    width:100%;
+    padding:.5rem;
+}
+
+#blog-post p:nth-of-type(1) {
+    margin:0;
+    padding:0;
+    display:inline;
+    float:right;
+}
+
+
+
+/******************************************
 /*  RESPONSIVE STYLES
 /*******************************************/
 
@@ -619,6 +684,10 @@ div a img .email {
 
     .tablet-desk-only {
         display:none;
+    }
+
+    .container-60 {
+        width:90%;
     }
 /*Homepage Styles*/
 
@@ -753,6 +822,21 @@ div a img .email {
     }
 /*End Staff Bios*/
 
+/*Blog Styles*/
+
+#blog-post p img {
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+#blog-post p:nth-of-type(1) {
+    margin:0;
+    padding:0;
+    float:none;
+    display:block;
+}
+/*End Blog Styles*/
 }
 
 @media only screen and (max-width:600px){
